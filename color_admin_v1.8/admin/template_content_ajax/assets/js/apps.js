@@ -688,7 +688,7 @@ var handleLoadPage = function(hash) {
     var targetUrl = hash.replace('#','');
     $('.jvectormap-label, .jvector-label, .AutoFill_border ,#gritter-notice-wrapper, .ui-autocomplete, .colorpicker, .FixedHeader_Header, .FixedHeader_Cloned .lightboxOverlay, .lightbox').remove();
     $.ajax({
-        type: 'POST',
+        type: 'GET',
         url: targetUrl,	//with the page number as a parameter
         dataType: 'html',	//expect html to be returned
         success: function(data) {
